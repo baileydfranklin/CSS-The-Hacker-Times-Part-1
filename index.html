@@ -5,6 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.js">
   <title>Hacker Times</title>
 </head>
 <body>
@@ -12,12 +13,16 @@
   <div class="newspaper-container">
     <!-- header -->
     <header>
-      <div class="date">JANUARY 1, 1970</div>
+      <div class="date">
+        <script>
+          document.getElementById("date").innerHTML = new Date().toString();
+      </script>
+      </div>
       <h1>The Hacker Times</h1>
     </header>
     <!-- navigation -->
-    <hr>
     <nav>
+      <hr>
       <ul>
         <li><a href="#">HTML & CSS</a></li>
         <li><a href="#">UX & UI</a></li>
@@ -28,8 +33,8 @@
         <li><a href="#">CYBERSECURITY</a></li>
         <li><a href="#">PYTHON</a></li>
       </ul>
+      <hr>
     </nav>
-    <hr>
     <!-- front page article -->
     <main>
       <h2>Have You Tried Turning It On and Off Again?</h2>
@@ -53,6 +58,21 @@
         <p class="p3">Lemon drops tiramisu sesame snaps oat cake marshmallow sugar plum liquorice. Tootsie roll pastry cake gummi bears pastry toffee tootsie roll candy. Pastry sesame snaps wafer liquorice. Gummies macaroon tiramisu jelly beans soufflé brownie ...</p>
       </section>
     </div>
+    <footer>
+      <hr>
+      <hr>
+        <h2>The Hacker Times</h2>
+        <div class="news">
+          <h4><u>News</u></h4>
+          <span id="homepage">Home Page</span>
+          <span id="world">World</span>
+          <span>Coronavirus</span>
+          <span>U.S.</span>
+          <span>Politics</span>
+        </div>
+      <hr>
+      <hr>
+    </footer>
   </div>
 </body>
 </html>
